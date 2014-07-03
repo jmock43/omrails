@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+#required for Devise on Heroku when using Rails 3.2
+#config.assets.initialize_on_precompile = false
+
 module Omrails
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
