@@ -5,6 +5,9 @@ gem 'rails', '4.1.1'
 gem 'devise'
 gem 'simple_form'
 
+
+gem 'protected_attributes' #needed for attr_accessible to be in models for Rails 4
+
 group :production do 
 	gem 'pg'
 end
