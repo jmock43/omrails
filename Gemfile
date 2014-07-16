@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 gem 'devise'
 gem 'simple_form'
-
+#gem "paperclip", "~> 3.0"
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'protected_attributes' #needed for attr_accessible to be in models for Rails 4
 
