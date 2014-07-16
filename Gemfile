@@ -6,7 +6,7 @@ gem 'devise'
 gem 'simple_form'
 #gem "paperclip", "~> 3.0"
 gem 'paperclip', github: 'thoughtbot/paperclip'
-
+gem 'aws-sdk'
 gem 'protected_attributes' #needed for attr_accessible to be in models for Rails 4
 
 group :production do 
