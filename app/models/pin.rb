@@ -6,8 +6,9 @@ class Pin < ActiveRecord::Base
 
 	validates :description, presence: true #for others search for rails validations
 	validates :user_id, presence: true
-	validates_attachment :image, presence: true,
-							size: { less_than: 5.megabytes}
+	validates_attachment :image,  content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] },
+							presence: true,
+							size: {less_than: 5.megabytes}
 	belongs_to :user
 
 
